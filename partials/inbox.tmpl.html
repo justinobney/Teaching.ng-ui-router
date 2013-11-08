@@ -1,0 +1,12 @@
+<div class="panel panel-default" ng-controller="InboxListCtrl">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Inbox</div>
+    
+
+    <!-- List group -->
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="message in messages">
+        	<a ng-href="#/inbox/{{message.id}}">{{message.title}}</a>
+        </li>
+    </ul>
+</div>

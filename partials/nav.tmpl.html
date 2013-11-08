@@ -1,0 +1,17 @@
+<div class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" ui-sref="home.list">Learn UI Router</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li ng-class="getNavActive('inbox')"><a ui-sref="inbox">Inbox</a></li>
+      <li ng-class="getNavActive('projects')"><a ui-sref="projects">Projects</a></li>
+    </ul>
+  </div>
+  <!--/.nav-collapse -->
+</div>

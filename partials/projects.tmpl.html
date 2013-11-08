@@ -1,0 +1,13 @@
+<div class="panel panel-success" ng-controller="ProjectListCtrl">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Projects</div>
+    
+
+    <!-- List group -->
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="project in projects">
+        	<span class="badge">{{project.estimatedCost | currency}}</span>
+        	<a ng-href="#/projects/{{project.id}}">{{project.name}}</a>
+        </li>
+    </ul>
+</div>
